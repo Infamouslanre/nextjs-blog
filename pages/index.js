@@ -24,25 +24,19 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>The name is Lanre, currently learning Next.js and React and I'm trying to build a portfolio thats connects all my feeds</p>
-        <p>
-          This is a sample website -  the tutorial is on{' '}
-          <a href="https://nextjs.org/learn">Next.js tutorial</a>.
-        </p>
       </section>
 
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>{title}</Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
+      <section className='pt-3'>
+        <nav className="flex sm:justify-center space-x-4">
+          {[
+            ['Blog', '/{id}'],
+            ['Projects', '/projects'],
+            ['Social Feed', '/Socails'],
+          ].map(([title, url]) => (
+            <a href={url} className="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-100 hover:text-slate-900">{title}</a>
           ))}
-        </ul>
+        </nav>
+
       </section>
     </Layout>
   );

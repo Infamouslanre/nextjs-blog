@@ -39,3 +39,17 @@ export async function getStaticProps({ params }) {
       },
     };
   }
+
+
+
+  //        <ul className={utilStyles.list}>
+  //{allPostsData.map(({ id, date, title }) => (
+ //   <li className={utilStyles.listItem} key={id}>
+ //     <Link className="text-blue-600 visited:text-purple-600" href={`/posts/${id}`}>{title}</Link>
+ //     <br />
+ //     <small className={utilStyles.lightText}>
+ //       <Date dateString={date} />
+//      </small>
+ //   </li>
+//  ))}
+//</ul>
