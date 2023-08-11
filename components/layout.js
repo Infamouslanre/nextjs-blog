@@ -5,7 +5,7 @@ import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
 const name = 'Lanre';
-export const siteTitle = 'Next.js Sample Website';
+export const siteTitle = "Portfolio";
 
 export default function Layout({ children, home }) {
   return (
@@ -14,7 +14,7 @@ export default function Layout({ children, home }) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="My Portfolio"
         />
         <meta
           property="og:image"
@@ -31,9 +31,9 @@ export default function Layout({ children, home }) {
             <Image
               priority
               src="/images/profile.jpg"
-              className={utilStyles.borderCircle}
-              height={144}
-              width={144}
+              className='rounded-full'
+              height='144'
+              width='144'
               alt=""
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
@@ -44,13 +44,13 @@ export default function Layout({ children, home }) {
               <Image
                 priority
                 src="/images/profile.jpg"
-                className={utilStyles.borderCircle}
-                height={108}
-                width={108}
+                className='rounded-full'
+                height='108'
+                width='108'
                 alt=""
               />
             </Link>
-            <h2 className={utilStyles.headingLg}>
+            <h2 className='text-7xl'>
               <Link href="/" className={utilStyles.colorInherit}>
                 {name}
               </Link>
@@ -60,8 +60,8 @@ export default function Layout({ children, home }) {
       </header>
       <main>{children}</main>
       {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">← Back to home</Link>
+        <div className="m-3" >
+          <Link className='text-blue-600 visited:text-purple-600' href="/">← Back to home</Link>
         </div>
       )}
     </div>
