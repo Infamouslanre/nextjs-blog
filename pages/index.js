@@ -27,9 +27,9 @@ export default function Home({ allPostsData }) {
       </section>
 
       <section className='pt-3'>
-        <nav className="flex sm:justify-center space-x-4">
+        <nav className="flex sm:justify-center space-x-4 text-4xl">
           {[
-            ['Blog', '/{id}'],
+            ['Blog', '/blog'],
             ['Projects', '/projects'],
             ['Social Feed', '/Socails'],
           ].map(([title, url]) => (
