@@ -22,8 +22,8 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>The name is Lanre, currently learning Next.js and React and I'm trying to build a portfolio thats connects all my feeds</p>
+      <section className="flex sm:justify-center space-x-4 text-2xl">
+        <p>I'm Lanre and I'm currently learning Javascript, I'm building a portfolio thats will track my progress and showchase different concepts I learn along the way.</p>
       </section>
 
       <section className='pt-3'>
